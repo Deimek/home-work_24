@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home-work_24</title>
+</head>
+
+<body>
+    <div>
+        <pre>Зробити валідацію для надсилання повідомлення з використанням регулярних виразів:
+        Поля:
+        -Name - обов'язкове текстове поле
+        -Message - текстове поле не менше 5 символів
+        -Phone number - обов'язкове поле типу phone. З початком на +380
+        -Email - email обов'язково повинен мати @ та крапку
+        Після відправки, в консоль відображаємо дані, які ввів користувач.
+        Під час помилки показувати її під полем.</pre>
+    </div>
+
+    <form action="#" class="contact__form" name="contactForm">
+        <fieldset>
+            <legend class="contact__title">We would like to help you</legend>
+
+            <label for="userName">Name</label>
+            <input type="text" id="userName" name="userName" placeholder="enter your name">
+            <span class="contact__error contact__error--userName"></span>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+            <span class="contact__error contact__error--message"></span>
+
+            <h3>HOWTO ANSWER YOU</h3>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+            <span class="contact__error contact__error--phone"></span>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <span class="contact__error contact__error--email"></span>
+
+            <button class="contact__btn">Send message</button>
+        </fieldset>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

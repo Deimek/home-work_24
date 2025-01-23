@@ -1,0 +1,13 @@
+input {
+    display: block;
+}
+
+textarea {
+    display: block;
+}
+
+.contact__error {
+    display: block;
+    height: 20px;
+    color: brown;
+}
